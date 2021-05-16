@@ -1,0 +1,40 @@
+body {
+    background-color: #15aabf;
+    color: white;
+}
+
+.section{
+    margin: auto;
+    text-align: center;
+}
+
+.section-header {
+    font-size: 2em;
+}
+
+
+/** EXTENSION POPUP **/
+#time {
+    font-size: 3em;
+}
+
+#time span {
+    margin-right: 10px;
+}
+
+
+/** BREAK POPUP **/
+#break {
+    margin-top: 30%;
+}
+
+#close {
+    border: 1px solid white;
+    border-radius: 5px;
+    background: white;
+    color:#15aabf;
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+}
