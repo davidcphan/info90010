@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="css/tailwind.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/settings_style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="js/options.js"></script>
+    
+</head>
+
+<body>
+    &nbsp;
+    <div class="size-plugin-max">
+        <a href="popup.html">Back to Timer</a>
+        <img src="img/logo_dark.png" width="200px" height="100px" />
+        <br />
+        <div class="row">
+            <div class="col-md-3">
+                &nbsp;
+                <a href="#">
+                    <h5 class="menu-items">Website Blocker</h5>
+                </a>
+                <a href="#">
+                    <h5 class="menu-items">Study Timer</h5>
+                </a>
+                <a href="#">
+                    <h5 class="menu-items">Scheduler</h5>
+                </a>
+            </div>
+            <div class="col-md-1">
+                <div class="bg-gradient-to-r from-transparent to-gray-100">
+                    &nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br /></div>
+            </div>
+            <div class="col-md-5">
+                &nbsp;
+
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Timer Interval</span>
+                    </div>
+                    <input id="timerValue" type="number" value="25" class="form-control" aria-label="Small"
+                        aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Break Duration</span>
+                    </div>
+                    <input type="number" value="5" class="form-control" aria-label="Small"
+                        aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+                <button type="button" class="btn btn-outline-light btn-sm" id="timerSet"><i class="far fa-save"></i> &nbsp;Save </button>
+
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <hr>
+        &nbsp;&nbsp;
+        <button type="button" class="btn btn-outline-light"><span> <img class="button-inline" src="img/Google_Calendar_icon_(2015-2020).png" height="50px" width="50px"> Sync Google Calendar </span></button>
+    </div>
+</body>
+
+</html>

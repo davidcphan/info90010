@@ -2,19 +2,52 @@
 
 //interval is the time between breaks
 let interval = 1;
-
+let breaktime = new Date();
 //Start the study timer
-startTimer(interval);
+//startTimer(interval);
+var countdown = 0
+
+function addMinutes(date, minutes) {
+  return new Date(date.getTime() + minutes*60000);
+}
+
+function resetTimer() {
+  console.log("RESET CALLED.")
+  clearInterval(countdown);
+  breaktime.setMinutes(0);
+  breaktime.setHours(0);
+  breaktime.setSeconds(0);
+  chrome.runtime.sendMessage({
+    study: true, 
+    time: {
+        h: 0,
+        m: 0,
+        s: 0
+    }
+  });
+}
 
 function startTimer(n) {
-  let breaktime = new Date();
+  if(n == "" || n == null)
+    {n = 25
+    }
+  console.log("New Duration "+n);
+  
   //Add amount of minutes to current time for next study break
-  breaktime.setMinutes(breaktime.getMinutes() + interval);
+  console.log("DEBUG")
+  var date = new Date();
+  breaktime = date;
+  console.log("RESET BREAK TIME IS" + breaktime);
+  console.log(date);
+  //console.log(date.getMinutes());
+  breaktime = addMinutes(breaktime, n);
 
   // Start the countdown
-  var countdown = setInterval(function() {
+  countdown = setInterval(function() {
     // Get today's date and time
-    var now = new Date().getTime();
+    var now = new Date();
+    console.log(breaktime + 'is breaktime')
+    console.log(now + 'is now')
     var distance = breaktime - now;
     // Time calculations for hours, minutes and seconds
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -30,6 +63,7 @@ function startTimer(n) {
     }
     else {
       // Send time to popup.js
+      console.log("entered else.. ")
       chrome.runtime.sendMessage({
         study: true, 
         time: {

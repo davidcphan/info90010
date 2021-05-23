@@ -1,0 +1,41 @@
+body{
+    background-color: #15abbf;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu-items{
+    text-decoration: white;
+    text-align: right;
+}
+
+h5{
+    font-weight: bold;
+
+}
+
+.text-muted{
+    color:rgb(138, 207, 228) !important; 
+}
+
+a{
+    color: white;
+}
+
+a:visited{
+    color: rgb(255, 249, 159);
+}
+
+
+a:hover{
+    color: rgb(161, 241, 255);
+}
+
+.button-inline{
+display:inline-block;
+}
+
+.size-plugin-max{
+    height: 600px;
+    width: 800px;
+}
