@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="./js/create-task.js"></script>
+</head>
+    <body>
+        <img src=./img/logo_dark.png>
+        <div class="section" id="create">
+            <h2 class="section-header">Create new task</h2>
+            <form method="post" action="http://fedora.studymates/wp-json/api/v1/add-task">
+                <label for="name">Task name: </label>
+            <input class="field" class="create-inputs" type="text" name="name"></input>
+            <br/>
+            <label for="time">Estimate: </label>
+            <select class="field" name="time" id="cars">
+                <option value="1">1 hrs</option>
+                <option value="2">2 hrs</option>
+                <option value="3">3 hrs</option>
+              </select>
+            <br/>
+            <input class="create-inputs" name="user" value="test" type="hidden">
+            <button id="submit">Create</button>
+            <br/>
+            <a href="popup.html">Back</a>
+            </form>
+        </div>
+    </body>
+</html>

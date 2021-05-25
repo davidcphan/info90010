@@ -38,3 +38,69 @@ body {
     font-size: 2em;
     text-transform: uppercase;
 }
+
+#new-task {
+    font-size: 0.7em;
+    margin-left: 20px;
+    font-style: none;
+    color: white;
+    text-decoration: none;
+    background-color: green;
+    padding: 5px;
+}
+
+.study-btns {
+    margin: 20px auto;
+}
+
+.study-btn {
+    width: 50%;
+    margin-bottom: 10px;
+
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+}
+
+.task {
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #15aabf; 
+    padding: 10px 0px;
+    max-width: 300px;
+    border-radius: 5px;
+}
+.task .btn-remove{
+    float: left;
+    color: red;
+    margin-left: 10px;
+}
+.task .btn-complete{
+    float: right;
+    color: green;
+    margin-right: 10px;
+}
+
+.task .btn-complete,
+.task .btn-remove{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+}
+
+.task .btn-complete:hover,
+.task .btn-remove:hover{
+    background-color: white;
+    border-radius: 5px;
+}
+.task span{
+    font-size: 1.5em;
+}
+
+#submit,
+.field{
+    margin: 10px auto;
+}

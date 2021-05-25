@@ -1,7 +1,7 @@
 //background.js will send message to popup.js, popup.js will update popup.html
 
 //interval is the time between breaks
-let interval = 1;
+let interval = 25;
 
 //Start the study timer
 startTimer(interval);
@@ -47,5 +47,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse){
   if(message.restart){
     startTimer(interval);
   }
+  else if(message.home){
+    window.location.href="popup.html";
+  }
 });
-
