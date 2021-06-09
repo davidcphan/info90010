@@ -13,4 +13,5 @@ This is our innovation project for the capstone subject INFO90010. This reposito
 3. Enable Developer mode on the top right corner
 4. Select "Load unpacked" button on the top left
 5. Select the extension folder
+6. Now you can pin the extension and click on the icon to see the UI
 
